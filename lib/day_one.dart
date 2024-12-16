@@ -36,5 +36,19 @@ List<int> convertStringListToInt(List<String> listToBeConverted) {
 }
 
 int calculateSimilarityScore(String path) {
-  return 0;
+  var inputLists = getInputLists(path);
+  List<int> list1 = convertStringListToInt(inputLists.$1);
+  List<int> list2 = convertStringListToInt(inputLists.$2);
+  int similarityScore = 0;
+  int occurences = 0;
+  list1.forEach((a) {
+    list2.forEach((b) {
+      if (a == b) {
+        occurences++;
+      }
+    });
+    similarityScore += a * occurences;
+    occurences = 0;
+  });
+  return similarityScore;
 }
