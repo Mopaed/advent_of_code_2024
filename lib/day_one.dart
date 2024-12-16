@@ -1,7 +1,5 @@
 import 'package:advent_of_code_2024/file_reader.dart';
 
-partOne() {}
-
 int calculateDistances(String path) {
   var inputLists = getInputLists(path);
   List<int> intList1 = convertStringListToInt(inputLists.$1);
