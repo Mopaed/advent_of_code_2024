@@ -7,3 +7,7 @@ List<List<int>> getInputList(String path) {
     }).toList();
   }).toList();
 }
+
+int getNumberOfSaveReports(String path) {
+  return 0;
+}
