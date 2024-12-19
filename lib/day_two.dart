@@ -8,7 +8,7 @@ List<List<int>> getInputList(String path) {
   }).toList();
 }
 
-int getNumberOfSaveReports(String path) {
+int getNumberOfSaveReports(String path, int dampners) {
   int safeReports = 0;
   List<List<int>> reports = getInputList(path);
   reports.forEach((sublist) {

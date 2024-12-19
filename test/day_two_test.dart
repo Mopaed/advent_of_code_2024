@@ -10,6 +10,6 @@ void main() {
   });
 
   test("getNumberOfSaveReports", () {
-    expect(day_two.getNumberOfSaveReports(path), 2);
+    expect(day_two.getNumberOfSaveReports(path, 0), 2);
   });
 }
